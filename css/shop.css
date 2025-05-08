@@ -526,11 +526,6 @@ h3:hover {
     .courses-list {
         --columns: 2;
     }
-
-    /* .content-footer {
-        flex-direction: column;
-        gap: 40px;
-    } */
     .footer-product {
         margin: 0;
     }
@@ -538,7 +533,7 @@ h3:hover {
 /*  */
 @media (max-width: 767px) {
     html {
-        font-size: 55%; /* chữ nhỏ hơn trên mobile */
+        font-size: 55%; 
     }
 
     .nav {
@@ -591,21 +586,4 @@ h3:hover {
     .footer-btn {
         width: 30%;
     }
-    /* .submenu {
-        position: static;
-        transform: none !important;
-        opacity: 1 !important;
-        visibility: visible !important;
-        box-shadow: none;
-        background: transparent;
-        padding-left: 12px;
-        display: none;
-    }
-
-    .submenu a {
-        background-color: #fff;
-        border: 1px solid #eee;
-        margin-bottom: 4px;
-        border-radius: 4px;
-    } */
 }

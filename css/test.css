@@ -138,13 +138,6 @@ h1.heading {
     /* bor padd cua .side3  */
     gap: 30px;
 }
-.logo-wrapper a {
-    display: inline-block;
-}
-.logo {
-    display: block; /*fix descender*/
-    width: 165px;
-}
 .sidebar {
     width: 270px;
     /* padding: 0 15px; */
@@ -482,12 +475,6 @@ h3:hover {
 .nav .submenu a {
     font-size: 1.4rem;
 }
-.drawer-lose,
-.drawer-overlay,
-.nav-logo,
-.drawer-open {
-    display: none;
-}
 /* ==========================media query */
 /* 
 @media (max-width: 991.98px) {
@@ -512,88 +499,14 @@ h3:hover {
         display: flex;
     }
 
-    .nav-wrapper {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        width: 70%;
-        background-color: var(--black);
-        z-index: 99;
-        translate: -101%;
-        transition: translate 0.5s ease;
-    }
-    .drawer-overlay {
-        display: block;
-        position: fixed;
-        inset: 0;
-        background-color: rgba(0, 0, 0, 0.6);
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.5s ease, visibility 0.5s ease;
-    }
-    #drawer:checked ~ .nav-wrapper {
-        translate: 0;
-    }
-    #drawer:checked ~ .drawer-overlay {
-        opacity: 1;
-        visibility: visible;
-    }
-    .drawer-lose {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        padding: 20px 30px;
-        color: var(--white);
-        font-size: 2rem;
-    }
     .nav {
-        width: 100%;
-        flex-direction: column;
-        overflow: auto;
-        overscroll-behavior: contain;
+        display: none;
     }
-    .nav .submenu {
-        width: 100%;
-        position: static;
-        /* display: none; */
-    }
-    .nav .submenu li a{
-       font-size: 1.6rem;
-    }
+
     .nav a {
-        width: 100%;
-        padding: 30px 40px;
-        font-size: 2rem;
-        text-align: center;
+        padding: 10px 12px;
+        font-size: 1.4rem;
     }
-    .logo-wrapper {
-        display: flex;
-        flex-direction: column;
-    }
-    .nav-logo {
-        display: block;
-        padding: 40px 30px;
-    }
-    .drawer-open {
-        display: block;
-        align-self: flex-start;
-        color: var(--white);
-        font-size: 2.8rem;
-        padding: 20px;
-        margin-left: -20px;
-        margin-bottom: -20px;
-    }
-    /* .logo-wrapper a{
-        display: inline-block;
-        padding: 30px;
-    } */
     .main .inner {
         display: flex;
         flex-direction: column-reverse;
@@ -623,9 +536,9 @@ h3:hover {
         font-size: 55%;
     }
 
-    /* .nav { 
+    .nav {
         display: none;
-    } */
+    }
 
     .nav a {
         padding: 12px 16px;
@@ -672,21 +585,5 @@ h3:hover {
     }
     .footer-btn {
         width: 30%;
-    }
-    .nav-wrapper {
-        width: 80%;
-        align-items: flex-start;
-    }
-    .nav a {
-        text-align: left;
-        /* margin-left: 20px; */
-    }
-    .drawer-lose {
-        opacity: 0.6;
-        font-style: 2.2rem;
-    }
-    .nav .submenu {
-        /* display: block; */
-        position: static; /*gias tri ban dau*/
     }
 }
